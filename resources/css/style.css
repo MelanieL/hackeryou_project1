@@ -9,10 +9,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 *   {
     outline: 1px solid red;
 }
+/*To be removed when project is completed*/
 
 ul  {
     list-style: none;
 }
+
+.wrapper    {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* Max-width for the wrapper on the PSD document is 1280px */
 
 .content__whyus--aside--list {
     list-style-image: url('../images/check.png');
