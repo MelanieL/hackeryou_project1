@@ -644,8 +644,35 @@ h4  {
     top: 220px;
 }
 
+/* This is where page 2 - about styling starts */
+/* This is where the hero on the about page starts */
 
+.header__hero__about   {
+    background-image: url('../images/hero_about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
 
+.blue-text  {
+color: #03a9f4;
+}
+
+.header__hero__about h1 {
+    padding-top: 140px;
+}
+
+.header__hero__about p  {
+    color: #ffffff;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+.header__hero-title {
+    padding-right: 425px;
+}
 
 
 
