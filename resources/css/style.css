@@ -5,14 +5,34 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* This is where style starts */
+/* Required font families: Lato */
 
 *   {
     outline: 1px solid red;
 }
-/*To be removed when project is completed*/
+/* To be removed when project is completed */
+
+body    {
+    background: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+/* Most of the site is uppercase, change to lower case when needed is less work */
 
 ul  {
     list-style: none;
+}
+
+a   {
+    text-decoration: none;
+}
+
+a,a:active,a:hover,a:focus  {
+    outline: none;
+}
+
+h4  {
+    font-size: 18px;
 }
 
 .wrapper    {
@@ -21,7 +41,614 @@ ul  {
 }
 /* Max-width for the wrapper on the PSD document is 1280px */
 
+/* These are the styles for top black nav bar. */
+.header__topnav {
+    background: #222222;
+    height: 38px;
+    width: 100%;
+}
+
+.header__topnav a   {
+    color: #8c8c8c;
+    font-size: 11px;
+    padding: 0px 15px;
+    text-decoration: none;
+}
+
+.border-right-v1 {
+    border-right: 1px solid #474747;
+}
+
+.header__topnav-left    {
+    float: left;
+    padding: 9px;
+}
+
+.header__topnav-right   {
+    float: right;
+    padding: 9px;
+}
+
+
+/* These are the styles for the top white title and search bar. */
+
+.header__searchnav  {
+    height: 150px;
+}
+
+.header__searchnav h3   {
+    color: #2d3b51;
+    font-size: 24px;
+}
+
+.header__searchnav--title   {
+    float: left;
+    padding: 44px 0px;
+}
+
+.blue_font  {
+    color: #03a9f4;
+}
+
+.header__searchnav--search  {
+    float: left;
+    width: 880px;
+}
+
+.search-bar   {
+    padding-top: 60px;
+    margin-left: 440px;
+    width: 400px;
+}
+
+.search-bar-combo   {
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #cfd8dc;
+    padding-left: 10px;
+}
+
+.search-input   {
+    background: #fafafa;
+    border: none;
+    display: inline-block;
+    height: 40px;
+    width: 360px;
+}
+
+.search-bar h6  {
+    text-align: right;
+    margin-top: 10px;
+    color: #bdbdbd;
+}
+
+.search-icon    {
+    font-size: 12px;
+    color: #cfd8dc;
+    padding-left: 6px;
+}
+
+.header__searchnav--social  {
+    float: left;
+    margin: 60px 0px 0px 5px;
+}
+
+.header__searchnav--social ul   {
+    margin: 0;
+    padding: 0;
+}
+
+.header__searchnav--social a    {
+    padding: 10px 10px 10px 10xp;
+}
+
+.header__searchnav--social i   {
+    color: white;
+    padding: 12px 14px;
+}
+
+.header__searchnav--social li   {
+    background: #cfd8dc;
+    border-radius: 3px;
+    color: white; /*this may not be white but couldn't clarify*/
+    display: inline-block;
+    margin: 0px 5px;
+    width: 40px;
+}
+
+/* These are the styles for the nav above the hero. */
+
+.header__heronav    {
+   background: #03a9f4;
+
+}
+
+.header__heronav--nav   {
+    height: 70px;
+    width: 100%;
+}
+
+.header__heronav--nav ul    {
+    padding: 0;
+    text-align: center;
+}
+
+.header__heronav--nav li    {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 20px 0;
+}
+
+.header__heronav--nav a {
+    color: #ffffff;
+}
+
+.border-right-v2    {
+    border-right: 1px solid #0288d1;
+    padding-right: 89px;  
+}
+
+.padding-left-v1    {
+    padding-left: 89px;
+}
+
+/* These are styles for the hero */
+
+.header__hero   {
+    background-image: url('../images/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.header__hero-title h1  {
+    color: #ffffff;
+    font-size: 72px;
+    margin: 0;
+    padding-top: 360px;
+}
+
+.header__hero-facts p   {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0px 50px;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+}
+
+.fact   {
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    height: 120px;
+    padding-top: 35px;
+    width: 400px;
+}
+
+.fact-left  {
+    background-color: #03A9F4;
+    border: 5px solid #03A9F4;
+    margin-right: 25px;
+}
+
+.fact-center,.fact-right   {
+    background-color: rgba(20, 32, 64, 0.9); 
+    /* I had to use RGBA colour instead of hex for this one because of the transparency */
+    border: 5px solid #03A9F4;
+
+}
+
+.fact-center    {
+    margin-right: 25px;
+}
+
+/* This is where styling begins for the options section */
+
+.content__options--list {
+    background: #142040;
+    margin: 80px 0px 80px 0px;
+}
+
+.content__options-box   {
+    color: #ffffff;
+    display: inline-block;
+    height: 155px;
+    margin: 0 auto;
+    width: 24.8%;
+}
+
+.content__options-box h2    {
+    float: left;
+    font-size: 48px;
+    text-align: right;
+    width: 49%;
+}
+
+.content__options-box p     {
+    float: right;
+    font-size: 14px;
+    margin-top: 49px;
+    padding-left: 10px;
+    text-align: left;
+    width: 49%;
+}
+
+/* This is where styling starts for both content__featured sections */
+
+.feat1  {
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+}
+
+.content__featured--title   {
+    padding-top: 80px;
+}
+
+.content__featured--title li,.feature--item  {
+    display: inline-block;
+}
+
+.content__featured--title ul    {
+    margin: 0px 0px 30px 0px;
+    padding-left: 0;
+}
+
+.content__featured--title h4    {
+    color: #212121;
+    margin: 0;
+}
+
+.content__featured--title li    {
+    margin-right: 80px;
+}
+
+.content__featured--title a     {
+    color: #616161;
+    padding-bottom: 5px;
+}
+
+.content__featured--title a:hover,a:active,a:focus  {
+    border-bottom: 1px solid #22b3f5;
+}
+
+.feature--item  {
+    padding-bottom: 80px; 
+    width: 23.6%; /* Maybe ask about using calc here */
+}
+
+.feature--item h5 {
+    background: #03A9F4;
+    bottom: -30px;
+    height: 30px;
+    left: -10px;
+    padding-top: 7px;
+    position: absolute;
+    text-align: center;
+    width: 88px;
+}
+
+.feature--item p    {
+    padding-top: 10px;
+    text-transform: none;
+}
+
+.feat-margin   {
+    margin-right: 20px;    
+}
+
+.content__featured--items   {
+    width: 100%;
+}
+
+.img-flat   {
+    position: relative;
+}
+
+.img-flat img {
+    height: 220px;
+    width: 100%;
+}
+
+/* This is where style starts for the why us section */
+
+.content__whyus {
+    height: 410px;
+}
+
+.content__whyus h4  {
+    margin-top: 0;
+}
+
+.content__whyus--content    {
+    padding: 78px 0px; 
+}    
+
+.content__whyus--main   {
+    padding-right: 120px;
+    width: 67%;
+}    
+.content__whyus--aside  {
+    width: 32%;
+}
+
+.content__whyus--aside li   {
+    padding: 5px 0px;
+}
+
+.content__whyus--main,.content__whyus--aside   {
+    display: inline-block;
+    float: left;
+}    
+
+.content__whyus--main p, .content__whyus--aside li  {
+    color: #8c8c8c;
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: none;
+}    
+
 .content__whyus--aside--list {
     list-style-image: url('../images/check.png');
 }
+
+/* This is where styling starts for the news section */
+
+.content__news  {
+    color: #ffffff;
+    background: #142040;
+    height: 488px;
+}
+
+.content__news--list    {
+    padding: 100px 0px;
+}
+
+.content__news--list h4 {
+    margin: 0;
+}
+
+.news   {
+    border-bottom: 5px solid #464f68;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    padding-bottom: 55px;
+    text-transform: none;
+    width: 24.9%;
+}
+
+/* I wasn't certain by just looking at the picture what the line underneath the news items was supposed to be, so I went with a hover */
+.news:hover {
+    border-bottom: 5px solid #bcc0c9;
+    border-radius: 3px;
+}
+
+.news h3    {
+    border-bottom: 2px solid #03a9f4;
+    color: #03a9f4;
+    font-size: 30px;
+    padding-bottom: 15px;
+    width: 50px;
+}
+
+/* This is where the style starts for the testimonials section */
+
+.content__testimonials  {
+    height: 480px;
+    width: 100%;
+}
+
+.content__testimonials--list    {
+    padding: 80px 0px 145px 0px;
+}
+
+.content__testimonials--list h4 {
+    text-align: center;
+}
+
+.testimonial    {
+    color: #8c8c8c;
+    border-left: 1px solid #dadada;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    text-transform: none;
+    width: 418px;
+}
+
+.testimonial p,.testimonial h6  {
+    padding: 0px 40px;
+}
+
+.testimonial h6 {
+    font-size:12px;
+    text-transform: uppercase;
+}
+
+.quotation-img  {
+    position: absolute;
+    top: -8px;
+    left: -20px;
+}
+
+/* This is where the subscribe content starts */
+
+.content__subscribe {
+    background: #03A9f4;
+    height: 115px;
+    width: 100%;
+}
+
+.content__subscribe--content    {
+    padding: 0;
+}
+
+.content__subscribe--getnot,.content__subscribe--input,.content__subscribe--button  {
+    display: inline-block;
+    float: left;
+}
+
+.content__subscribe--getnot {
+    color: #ffffff;
+    float: left;
+    padding-top: 15px;
+    width: 535px;
+}
+
+.content__subscribe--getnot i,.content__subscribe--getnot h4    {
+    display: inline-block;
+}
+
+.content__subscribe--getnot i   {
+    color: #0274A8;
+    font-size: 19px;
+}
+
+.content__subscribe--getnot h4  {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.content__subscribe--getnot h6  {
+    margin: 0;
+    padding: 0px 0px 0px 42px;
+}
+
+.content__subscribe--input,.content__subscribe--button  {
+    height: 115px;
+}
+
+.content__subscribe--input  {
+    background: #0690d4;
+    width: 525px;
+}
+
+.content__subscribe--input input  {
+    background: #0690d4;
+    border: none;
+    color: #ffffff;
+    float: right;
+    font-size: 18px;
+    height: 115px;
+    width: 485px;
+}
+
+.content__subscribe--button {
+    background: #0A71AA;
+    font-size: 14px;
+    position: relative;
+    width: 215px;
+}
+
+.content__subscribe--button a   {
+    color: #ffffff;
+    left: 67px;
+    position: absolute;
+    top: 48px;
+}
+
+/* This is where the footer styles begin */
+
+.footer__box    {
+    background-image: url(../images/footer_map.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+    width: 100%;
+}
+
+.footer__box--black     {
+    background: #293450;
+    color:#ffffff;
+    float: left;
+    height: 530px;
+    padding: 80px 125px;
+    position: relative;
+    width: 535px;
+}
+
+.footer__box--black h3  {
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.footer__box--black a   {
+    color: #ffffff;
+}
+
+.footer__box--black p   {
+    text-transform: none;
+}
+
+.first-paragraph   {
+    margin-top: 0;
+    padding-top: 72px;
+}
+
+.mailto-link    {
+    font-style: italic;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.footer__box--sm    {
+    padding-top: 75px;
+}
+
+.footer__box--sm a  {
+    font-size: 12px;
+}
+
+.footer-fb-i  {
+    color: #2A6EFC;
+    font-size: 16px;
+    padding-right: 8px;
+}
+
+.footer-tw-i  {
+    color: #55ACEE;
+    font-size: 16px;
+    padding-right: 8px;
+}
+
+.footer__fb,.footer__tw  {
+    display: inline-block;
+    float: left;
+    width: 85px;
+}
+
+.footer__fb     {
+    border-bottom: 1px solid #2A6EFC;
+    padding-bottom: 5px;
+}
+
+.footer__tw     {
+    border-bottom: 1px solid #55ACEE;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.footer-map-marker  {
+    left: 876px;
+    position: absolute;
+    top: 220px;
+}
+
+
+
+
+
+
+
+
 
