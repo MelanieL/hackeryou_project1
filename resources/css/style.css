@@ -883,6 +883,113 @@ color: #03a9f4;
 }
 
 /* This is where styling for page 3 / blog starts. */
+.blog__title {
+    border-bottom: 1px solid #E8E8E8;   
+    font-size: 72px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+section    {
+    display: inline-block;
+    width: 72%;
+}
+
+.aside      {
+    display: inline-block;
+    width: 25%;
+}
+
+.blog__article  {
+    float: left;
+    margin-top: 38px;
+    width: 100%;
+}
+
+.blog__article-img  {
+    float: left;
+    min-height: 498px;
+    width: 925px;
+}
+
+.blog__article-img img  {
+    width: 100%;
+}
+
+.blog__article-teaser   {
+    background-color: #fafafa;
+    float: left;
+    min-height: 313px;
+    width: 925px;
+}
+
+.blog__article-teaser h4    {
+    font-size: 18px;
+    margin-top: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.blog__article-teaser h6   {
+    color: #8c8c8c;
+    font-style: italic;
+    text-align: center;
+    text-transform: none;
+}
+
+.blog__article-teaser p {
+    color: #8c8c8c;
+    padding: 0px 40px 80px 40px;
+    text-transform: none;
+}
+
+.blog__quote-box    {
+    float: left;
+    min-height: 253px;
+    width: 925px;
+}
+
+.blog__quote    {
+    background: #03A9f4;
+    margin-top: 40px;
+    min-height: 254px;
+    padding-bottom: 80px; 
+    position: relative;
+    width: 925px;
+}
+
+.blog__quote h4 {
+    color: #ffffff;
+    font-size: 18px; 
+    margin-top: 0;
+    padding: 80px 60px 38px 60px;
+    position: relative;
+    text-align: center;
+    z-index: 50;
+}
+
+.blog__quote h6 {
+    color: #ffffff;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.blog__quote-img    {
+    bottom: 85px;
+    position: absolute;
+    right: 44px;
+    z-index: 10;
+}
+
+.egypt  {
+    min-height: 700px;
+}
+
+.egypt-teaser  {
+    min-height: 195px;
+}
 
 
 
