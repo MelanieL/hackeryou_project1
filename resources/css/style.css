@@ -674,6 +674,215 @@ color: #03a9f4;
     padding-right: 425px;
 }
 
+/* This is where the history/fact section starts */
+.history    {
+    height: 900px;
+    width: 100%;
+}
+
+.history__content h4    {
+    text-align: center;
+    padding-top: 85px;
+}
+
+.history__content-nav   {
+    padding-left: 0;
+    text-align: center;
+}
+
+.history__content-nav li  {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.history__content-nav a {
+    color: #9e9e9e;
+    font-size: 12px;
+}
+
+.history__content-nav a:hover   {
+    border-bottom: 1px solid #30aadf;
+    color: #616161;
+    font-size: 12px;
+}
+
+.history__content p {
+    color: #8c8c8c;
+    padding: 60px 215px;
+    text-align: center;
+    text-transform: none;
+}
+
+.fact-circle-div    {
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    width: 1080px;
+}
+
+.fact-circle-img  {
+    height: 400px;
+    margin: 0 auto;
+    width: 400px;
+    /* z-index: 40; */
+}
+
+.fact-circle-fact h3    {
+    color: #142040;
+    font-size: 72px;
+    margin: 0;
+}
+
+.fact-circle-fact h6    {
+    margin-top: 5px;
+}
+
+.fact-circle-fact    {
+    position: absolute;
+}
+
+.fc-tl  {
+    top: -15px;
+    left: 0;
+}
+
+.fc-tl::after   {
+    background: #2D3B51;
+    content: "";
+    height: 1px;
+    left: 236px;
+    position: absolute;
+    top: 70px;
+    width: 165px;
+}
+
+.fc-bl  {
+    bottom: 0;
+    left: 0;
+}
+
+.fc-bl::after   {
+    background: #2D3B51;
+    content: "";
+    height: 1px;
+    left: 236px;
+    position: absolute;
+    top: 70px;
+    width: 165px;
+}
+
+.fc-tr  {
+    top: -15px;
+    right: 41px;
+}
+
+.fc-tr::before   {
+    background: #2D3B51;
+    content: "";
+    height: 1px;
+    right: 195px;
+    position: absolute;
+    top: 70px;
+    width: 165px;
+}
+
+.fc-br  {
+    bottom: 0;
+    right: 0;
+}
+
+.fc-br::before   {
+    background: #2D3B51;
+    content: "";
+    height: 1px;
+    right: 236px;
+    position: absolute;
+    top: 70px;
+    width: 165px;
+}
+
+/* This is where the we choose section styling begins */
+
+.wechoose   {
+    background: #f7fafb;
+    /* height: 600px; */
+    width: 100%;
+}
+
+.wechoose__content-img {
+    display: inline-block;
+    float: left;
+    /* height: 600px; */
+    width: 50%;
+}
+
+.wechoose__content-img img  {
+    width: 100%;
+}
+
+.wechoose__content-text {
+    float: left;
+    display: inline-block;
+    padding: 90px 155px;
+    width: 50%;
+}
+
+.wechoose__content-text p {
+    color: #8c8c8c;
+    font-size: 16px;
+    text-transform: none;
+}
+
+/* This is where the styling for the we offer section begins */
+
+.weoffer    {
+    height: 630px;
+    width: 100%;
+}
+
+.weoffer h4 {
+    margin: 0;
+    padding: 120px 0px 80px 0px;
+    text-align: center;
+}
+
+.wechoose__content-icons-div    {
+}
+
+.wechoose-square    {
+    display: inline-block;
+    background: #03A9F4;
+    height: 300px;
+    float: left;
+    padding-top: 75px;
+    width: 300px;
+}
+
+.wechoose-square-img    {
+    margin: 0 auto;
+    width: 90px;
+}
+
+.wechoose-square-img img    {
+    width: 100%;
+}
+
+.wechoose-square h5 {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.square-ml  {
+    margin-left: 26px;
+}
+
+.testimonials-bt    {
+    border-top: 1px solid #dadada;
+}
+
+
 
 
 
