@@ -325,6 +325,7 @@ h4  {
 .feature--item h5 {
     background: #03A9F4;
     bottom: -30px;
+    color: #ffffff;
     height: 30px;
     left: -10px;
     padding-top: 7px;
@@ -334,6 +335,7 @@ h4  {
 }
 
 .feature--item p    {
+    color: #C1C1C1;
     padding-top: 10px;
     text-transform: none;
 }
@@ -389,7 +391,7 @@ h4  {
 .content__whyus--main p, .content__whyus--aside li  {
     color: #8c8c8c;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 2;
     text-transform: none;
 }    
 
@@ -890,15 +892,11 @@ color: #03a9f4;
     padding-bottom: 20px;
 }
 
-section    {
+.section__blog    {
     display: inline-block;
     width: 72%;
 }
 
-.aside      {
-    display: inline-block;
-    width: 25%;
-}
 
 .blog__article  {
     float: left;
@@ -939,6 +937,7 @@ section    {
 
 .blog__article-teaser p {
     color: #8c8c8c;
+    line-height: 2;
     padding: 0px 40px 80px 40px;
     text-transform: none;
 }
@@ -989,6 +988,147 @@ section    {
 
 .egypt-teaser  {
     min-height: 195px;
+}
+
+/* This is where the styling for the nav at the bottom of the page begins */
+
+.blog__pnav {
+    border-top: 1px solid #E8E8E8;
+    float: left;
+    margin-top: 40px;
+    min-height: 132px;
+    width: 100%;
+}
+
+.blog__pnav-p,.blog__pnav-n  {
+    color: #ffffff;
+    background: #d1d1d1;
+    border-radius: 3px;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: none;
+    width: 125px;
+}
+
+.blog__pnav-p   {
+    float: left;
+}
+
+.blog__pnav-n   {
+    float: right;
+}
+
+.blog__pnav-p a,.blog__pnav-n a {
+    padding: 0;
+}
+
+.blog__pnav-p:hover,.blog__pnav-n:hover {
+    background: #03A9F4;
+}
+
+.blog__pnav-nums    {
+    float: left;
+    font-size: 13px;
+    margin-left: 258px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.blog__pnav-nums li {
+    background: #d1d1d1;
+    border-radius: 3px;
+    display: inline-block;
+    height: 25px;
+    padding: 5px;
+    width: 25px;
+}
+
+.blog__pnav-nums li:hover    {
+    background: #03A9F4;
+}
+
+.blog__pnav-nums a  {
+    color: #ffffff;    
+}
+
+/* This is where the styling for the side bar begins */
+
+aside      {
+    float: right;
+    width: 25%;
+}
+
+.side__search {
+    background: #fafafa;
+    border: 1px solid #E8E8E8;
+    float: left;
+    height: 32px;
+    margin: 10px 0px;
+    width: 320px;
+}
+
+.aside-top-title {
+    margin-top: 37px;
+}
+
+aside h5 {
+    color: #212121;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.search-bar-combo-sm    {
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #cfd8dc;
+}
+
+.search-bar-combo-sm input  {
+    height: 30px;
+    padding-left: 10px;
+    width: 290px;
+}
+
+.side__categories,.side__archive,.side__twfeed   {
+    border-top: 1px solid #e8e8e8;
+    float: left;
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.side__cats-cols a   {
+    color: #8c8c8c;
+    text-transform: none;
+}
+
+.side__cats-cols ul   {
+    float: left;
+    padding: 0;
+}
+
+.cats-right-cats li {
+    padding-left: 60px;
+}
+
+.cats-right-months li   {
+    padding-left: 48px;
+}
+
+.side__twfeed   {
+    border-bottom: 1px solid #e8e8e8;
+    color: #8c8c8c;
+    font-size: 13px;
+    padding-bottom: 30px;
+    text-transform: none;
+}
+
+.date   {
+    margin-bottom: 30px;
 }
 
 

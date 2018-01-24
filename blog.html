@@ -71,7 +71,7 @@
 
     <div class="wrapper">
         <h1 class="blog__title">BLOG</h1>
-        <section>
+        <section class="section__blog">
             <div class="blog__article clearfix">
                 <div class="blog__article-img">
                     <img src="resources/images/blog_img1.jpg">
@@ -124,22 +124,22 @@
                     <li><a href="">...</a></li>
                     <li><a href="">17</a></li>
                 </ul>
-                <a class="blog__pnav-n" href="">Previous Page</a>
+                <a class="blog__pnav-n" href="">Next Page</a>
             </div>
         </section>
     
         <aside>
-            <div class="side__search">
-                <h5>Search</h5>
-                <div class="search-bar-combo">
+                <h5 class="aside-top-title">Search</h5>
+                <div class="side__search clearfix">
+                <div class="search-bar-combo-sm">
                     <input class="search-input" type="text" placeholder="">
                     <i class='fa fa-search search-icon' aria-hidden='true'></i>
                 </div>
             </div>
 
-            <div class="side__categories">
+            <div class="side__categories clearfix">
                 <h5>Categories</h5>
-                <div class="side__cats-cols">
+                <div class="side__cats-cols clearfix">
                     <ul class"cats-left">
                         <li><a href="">Business</a></li>
                         <li><a href="">Money</a></li>
@@ -149,7 +149,7 @@
                         <li><a href="">Travel</a></li>
                         <li><a href="">Sport</a></li>
                     </ul>
-                    <ul class="cats-right">
+                    <ul class="cats-right-cats">
                         <li><a href="">Ornare</a></li>
                         <li><a href="">Ultricies</a></li>
                         <li><a href="">Egestas</a></li>
@@ -161,9 +161,9 @@
                 </div>
             </div>
 
-            <div class="side__archive">
+            <div class="side__archive clearfix">
                 <h5>Archive</h5>
-                <div class="side__cats-cols">
+                <div class="side__cats-cols clearfix">
                     <ul class"cats-left">
                         <li><a href="">January 2014</a></li>
                         <li><a href="">February 2014</a></li>
@@ -172,7 +172,7 @@
                         <li><a href="">May 2014</a></li>
                         <li><a href="">June 2014</a></li>
                     </ul>
-                    <ul class="cats-right">
+                    <ul class="cats-right-months">
                         <li><a href="">July 2014</a></li>
                         <li><a href="">August 2014</a></li>
                         <li><a href="">September 2014</a></li>
@@ -183,20 +183,38 @@
                 </div>
             </div>
 
-            <div class="side__twfeed">
+            <div class="side__twfeed clearfix">
                 <h5>Twitter Feed</h5>
-                <p>@envato Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptate corporis natus reprehenderit in consequuntur!</p>
+                <p>@envato Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptate corporis natus reprehenderit in consequuntur! <a href=""><span class="blue-text">https://thisisalink.com</span></a></p>
                 <p class="date">May 5</p>
-                <p>@envato Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium. Porro totam earum fuga corporis iure dicta adipisci perspiciatis ut.</p>
-                <p class="date">May 2</p>
+                <p>@envato Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium. Porro totam earum fuga corporis iure dicta adipisci perspiciatis ut.<a href=""><span class="blue-text">https://thisisamuchlargerlink.com</span></a></p>
+                <p>May 2</p>
                 <p>@envato Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, expedita? - Steve Jobs</p>
-                <p class="date">May 1</p>            
+                <p>May 1</p>            
             </div>
 
         </aside>
     </div>
 
     <footer>
+        <div class="content__subscribe">
+            <div class="wrapper">
+                <div class="content__subscribe--content">
+                    <div class="content__subscribe--getnot">
+                        <i class="fa fa-envelope get-not-icon" aria-hidden="true"></i>
+                        <h4>Get Notified</h4>
+                        <h6>Latest News, Offers and Much More</h6>
+                    </div>
+                    <div class="content__subscribe--input">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <div class="content__subscribe--button">
+                        <a href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="footer__box">
             <div class="wrapper">
                 <div class="footer__box--black">
