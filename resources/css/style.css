@@ -253,19 +253,24 @@ h4  {
 .content__options--list {
     background: #142040;
     margin: 80px 0px 80px 0px;
+    min-height: 155px;
 }
 
 .content__options-box   {
     color: #ffffff;
     display: inline-block;
-    height: 155px;
-    margin: 0 auto;
+    margin-top: 10px;
     width: 24.8%;
+}
+
+.ml2    {
+    border-left: 1px solid #203266;
 }
 
 .content__options-box h2    {
     float: left;
     font-size: 48px;
+    padding-top: 4px;
     text-align: right;
     width: 49%;
 }
@@ -273,6 +278,7 @@ h4  {
 .content__options-box p     {
     float: right;
     font-size: 14px;
+    line-height: 1.6;
     margin-top: 49px;
     padding-left: 10px;
     text-align: left;
@@ -360,7 +366,7 @@ h4  {
 /* This is where style starts for the why us section */
 
 .content__whyus {
-    height: 410px;
+    min-height: 410px;
 }
 
 .content__whyus h4  {
@@ -368,7 +374,9 @@ h4  {
 }
 
 .content__whyus--content    {
-    padding: 78px 0px; 
+    border-top: 1px solid #EEEEEE;
+    float: left;
+    padding-top: 80px;
 }    
 
 .content__whyus--main   {
@@ -424,6 +432,10 @@ h4  {
     padding-bottom: 55px;
     text-transform: none;
     width: 24.9%;
+}
+
+.news p {
+    line-height: 1.7;
 }
 
 /* I wasn't certain by just looking at the picture what the line underneath the news items was supposed to be, so I went with a hover */
@@ -516,7 +528,7 @@ h4  {
 }
 
 .content__subscribe--getnot h4  {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     padding-left: 20px;
 }
 
@@ -569,7 +581,7 @@ h4  {
 }
 
 .footer__box--black     {
-    background: #293450;
+    background: rgba(41,52,80,0.9);
     color:#ffffff;
     float: left;
     height: 530px;
