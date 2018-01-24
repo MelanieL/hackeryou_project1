@@ -6,18 +6,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* This is where style starts */
 /* Required font families: Lato */
+/* I used sketch to pull some colours so I could learn how to use it.  The colours used on this site are: #ffffff, #222222, #8c8c8c, #474747, #03a9f4, #cfd8dc, #fafafa, #bdbdbd, #cfd8dc, #2d3b51, #0288d1, #142040, #203266, #f0f0f0, #212121, #616161, #22b3f5, #C1C1C1, #EEEEEE,#464f68, #bcc0c9, #dadada, #0274A8, #0690d4, #0A71AA, #2A6EFC, #55ACEE, #9e9e9e, #616161, #f7fafb, #E8E8E8, #d1d1d1, #212121, rgba(20, 32, 64, 0.9), rgba(41,52,80,0.9) */
 
-*   {
-    outline: 1px solid red;
-}
-/* To be removed when project is completed */
 
 body    {
     background: #ffffff;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
 }
-/* Most of the site is uppercase, change to lower case when needed is less work */
+/* Most of the site is uppercase.  Changing to lower case when needed with text-transform is less work */
 
 ul  {
     list-style: none;
@@ -44,8 +41,9 @@ h4  {
     max-width: 1280px;
     margin: 0 auto;
 }
-/* Max-width for the wrapper on the PSD document is 1280px */
+/* Max-width for the wrapper on the PSD document is 1280px.  However, there is one section on the about page that goes outside the wrapper on the PSD.  I left that section out of the wrapper as well. */
 
+/* First page / index.html styling starts here.  Several styles live here but are re-used on page 2 and 3. */
 /* These are the styles for top black nav bar. */
 .header__topnav {
     background: #222222;
@@ -155,7 +153,7 @@ h4  {
 .header__searchnav--social li   {
     background: #cfd8dc;
     border-radius: 3px;
-    color: white; /*this may not be white but couldn't clarify*/
+    color: #ffffff;
     display: inline-block;
     margin: 0px 5px;
     width: 40px;
@@ -330,7 +328,7 @@ h4  {
 
 .feature--item  {
     padding-bottom: 80px; 
-    width: 23.6%; /* Maybe ask about using calc here */
+    width: 23.6%;
 }
 
 .feature--item h5 {
@@ -586,7 +584,7 @@ h4  {
 }
 
 .footer__box--black     {
-    background: rgba(41,52,80,0.9);
+    background: rgba(41,52,80,0.9); /* Needed to use RGBA here for transparency option */
     color:#ffffff;
     float: left;
     height: 530px;
